@@ -8,11 +8,10 @@ class ListviewCardWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-        physics: BouncingScrollPhysics(),
-        itemCount: 8,
-        itemBuilder: (context, index) {
-          return CardWidget();
-        });
+    return SliverList(
+      delegate: SliverChildBuilderDelegate(childCount: 8, (context, index) {
+        return CardWidget();
+      }),
+    );
   }
 }

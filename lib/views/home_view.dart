@@ -30,15 +30,29 @@ class HomeView extends StatelessWidget {
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 15),
-        child: Column(
-          children: [
-            ListviewCardCategory(),
-            SizedBox(
-              height: 20,
+        child: CustomScrollView(
+          //physics: BouncingScrollPhysics(),
+          slivers: [
+            SliverToBoxAdapter(
+              child: ListviewCardCategory(),
             ),
-            Expanded(child: ListviewCardWidget())
+            SliverToBoxAdapter(
+              child: SizedBox(
+                height: 20,
+              ),
+            ),
+            ListviewCardWidget()
           ],
         ),
+        // child: Column(
+        //   children: [
+        //     ListviewCardCategory(),
+        //     SizedBox(
+        //       height: 20,
+        //     ),
+        //     Expanded(child: ListviewCardWidget())
+        //   ],
+        // ),
       ),
     );
   }
