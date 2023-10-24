@@ -31,7 +31,7 @@ class HomeView extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 15),
         child: CustomScrollView(
-          //physics: BouncingScrollPhysics(),
+          physics: BouncingScrollPhysics(),
           slivers: [
             SliverToBoxAdapter(
               child: ListviewCardCategory(),
