@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/widget/listview_card_category_widget.dart';
-import 'package:news_app/widget/listview_card_widget.dart';
+
+import '../widget/listview_card_widget_builder.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -28,8 +29,8 @@ class HomeView extends StatelessWidget {
           ],
         ),
       ),
-      body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 15),
+      body: const Padding(
+        padding: EdgeInsets.symmetric(horizontal: 15),
         child: CustomScrollView(
           physics: BouncingScrollPhysics(),
           slivers: [
@@ -41,18 +42,9 @@ class HomeView extends StatelessWidget {
                 height: 20,
               ),
             ),
-            ListviewCardWidget()
+            ListviewCardWidgetBuilder()
           ],
         ),
-        // child: Column(
-        //   children: [
-        //     ListviewCardCategory(),
-        //     SizedBox(
-        //       height: 20,
-        //     ),
-        //     Expanded(child: ListviewCardWidget())
-        //   ],
-        // ),
       ),
     );
   }
