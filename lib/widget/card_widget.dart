@@ -19,7 +19,7 @@ class CardWidget extends StatelessWidget {
             borderRadius: BorderRadius.circular(8),
             child: Image.network(
               articleModel.image ??
-                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvOuS_Dum7fRFAW8Tu_4dwCw-Snjs4dK7mk8rFzorHp9hdWwKGW9s5GZ6T7OR6F3bJqtg&usqp=CAU',
+                  'https://lpm.ulm.ac.id/image/desain/empty.jpg',
               height: 200,
               width: double.infinity,
               fit: BoxFit.cover,

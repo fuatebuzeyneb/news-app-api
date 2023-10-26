@@ -7,11 +7,19 @@ class ListviewCardCategory extends StatelessWidget {
     super.key,
   });
   final List<CategoryModel> categorys = const [
-    CategoryModel(title: 'Business', imagePath: 'assets/images/business.jpeg'),
-    CategoryModel(title: 'Sports', imagePath: 'assets/images/sports.jpeg'),
-    CategoryModel(title: 'title', imagePath: 'assets/images/business.jpeg'),
-    CategoryModel(title: 'title', imagePath: 'assets/images/sports.jpeg'),
-    CategoryModel(title: 'title', imagePath: 'assets/images/business.jpeg'),
+    CategoryModel(
+        categoryName: 'Business', imagePath: 'assets/images/business.jpeg'),
+    CategoryModel(
+        categoryName: 'Sports', imagePath: 'assets/images/sports.jpg'),
+    CategoryModel(
+        categoryName: 'entertainment',
+        imagePath: 'assets/images/entertainment.jpg'),
+    CategoryModel(
+        categoryName: 'science', imagePath: 'assets/images/science.jpg'),
+    CategoryModel(
+        categoryName: 'technology', imagePath: 'assets/images/technology.jpg'),
+    CategoryModel(
+        categoryName: 'health', imagePath: 'assets/images/health.jpg'),
   ];
   @override
   Widget build(BuildContext context) {

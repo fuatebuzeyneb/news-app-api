@@ -42,7 +42,9 @@ class HomeView extends StatelessWidget {
                 height: 20,
               ),
             ),
-            ListviewCardWidgetBuilder()
+            ListviewCardWidgetBuilder(
+              category: 'general',
+            )
           ],
         ),
       ),
